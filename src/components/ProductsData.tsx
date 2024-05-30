@@ -10,7 +10,7 @@ import { IoIosStar } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import toast, { Toaster } from "react-hot-toast";
 
-const productsData = ({ item }: ItemProps) => {
+const ProductsData = ({ item }: ItemProps) => {
   const dispatch = useDispatch();
 
   const starArray = Array.from({ length: item.rating }, (_, index) => (
@@ -71,4 +71,4 @@ const productsData = ({ item }: ItemProps) => {
   );
 };
 
-export default productsData;
+export default ProductsData;

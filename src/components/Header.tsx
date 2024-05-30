@@ -3,6 +3,7 @@ import React from "react";
 import Container from "./Container";
 import Logo from "./Logo";
 import Link from "next/link";
+import Image from "next/image";
 import { BsCart } from "react-icons/bs";
 import { BsBookmarks } from "react-icons/bs"
 import FormattedPrice from "./FormattedPrice";
@@ -81,7 +82,7 @@ const Header = () => {
         </Link>
         {/* user image */}
         {session && (
-          <img
+          <Image
             src={session?.user?.image as string}
             alt="user Image"
             width={50}
