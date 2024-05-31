@@ -25,8 +25,8 @@ const OrderDetails = () => {
       setTotalAmt(amt);
     }, [orderData.order]);
 
-    console.log(orderData);
-
+    // console.log(orderData);
+  
     return (
       <div>
         {orderData?.order?.length > 0 ? (
@@ -54,7 +54,7 @@ const OrderDetails = () => {
                         </div>
                     ))
                 }
-            </div>
+              </div>
               <div className="text-lg font-medium py-2 border-b-[1px] border-b-gray-300">
                 <p>Payment Details</p>
               </div>
@@ -65,7 +65,7 @@ const OrderDetails = () => {
               <button onClick={()=>dispatch(resetOrder())} className="mt-5 border-[1px] border-gray-500 py-1 px-4 font-medium rounded-md hover:border-orange-600 cursor-pointer duration-200">Reset Order</button>
             </div>
         ): (
-            <div className="py-10 bg-white text-black text-black text-2xl text-center">
+            <div className="py-10 bg-white text-black text-2xl text-center">
                 <p>Nothing to Show</p>
                 <Link href={"/"}>
                         <button className="bg-black text-slate-100 w-44 h-12 rounded-full text-base font-semibold hover:bg-orange-600 mt-2 duration-300">Continue Shopping</button>

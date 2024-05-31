@@ -17,7 +17,7 @@ export const shoppingSlice = createSlice({
   name: "shopping",
   initialState,
   reducers: {
-    addToCart: (state, action) => {
+     addToCart: (state, action) => {
       const existingProduct = state.productData.find(
         (item: Productss) => item._id === action.payload._id
       );
